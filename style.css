@@ -31,11 +31,7 @@ a:hover { color: var(--text); }
   padding: 48px 24px 96px;
 }
 
-.brand {
-  font-family: "Comfortaa", -apple-system, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
+.logo { display: block; }
 
 .site-header {
   border-bottom: 1px solid var(--border);
@@ -43,11 +39,14 @@ a:hover { color: var(--text); }
   margin-bottom: 40px;
 }
 
-.site-header .logo {
-  font-size: 28px;
+.logo-link {
+  display: inline-block;
+  line-height: 0;
 }
-.site-header .logo .yellow { color: var(--hoho-yellow); }
-.site-header .logo .caramel { color: var(--hoho-caramel); font-size: 0.7em; margin-left: 6px; }
+.header-logo {
+  height: 40px;
+  width: auto;
+}
 
 .site-header nav {
   margin-top: 12px;
@@ -117,12 +116,15 @@ footer {
   text-align: center;
   padding: 80px 20px 40px;
 }
-.hero .logo {
-  font-size: 64px;
+.hero-logo {
+  width: 320px;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
 .hero .tagline {
   color: var(--text-soft);
-  margin-top: 16px;
+  margin-top: 24px;
   font-size: 16px;
 }
 .hero .links {
