@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>공지 · hoho studio</title>
+  <meta name="description" content="hoho studio 공지사항 - 앱 출시·약관 시행·서비스 변경 안내" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .notice-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+    }
+    .notice-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .notice-item:first-child { padding-top: 0; }
+    .notice-item:last-child { border-bottom: none; }
+    .notice-date {
+      font-size: 13px;
+      color: var(--text-soft);
+      margin-bottom: 6px;
+    }
+    .notice-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 6px;
+    }
+    .notice-body {
+      font-size: 14px;
+      color: var(--text-soft);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .notice-body a {
+      color: var(--hoho-caramel);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" class="logo-link" aria-label="hoho studio 홈">
+        <img class="logo header-logo" src="/assets/logo.svg" alt="hoho studio" />
+      </a>
+      <nav>
+        <a href="/">홈</a>
+        <a href="/kids-health-assistant">키즈건강비서</a>
+        <a href="/notices">공지</a>
+        <a href="/support">지원</a>
+        <a href="/privacy">개인정보처리방침</a>
+        <a href="/terms">이용약관</a>
+      </nav>
+    </header>
+
+    <article>
+      <h1>공지</h1>
+      <p class="meta">
+        hoho studio의 앱 출시, 약관·정책 시행, 서비스 변경에 대한 안내를 모아둔 자리예요.
+      </p>
+
+      <ul class="notice-list">
+
+        <li class="notice-item">
+          <div class="notice-date">2026-05-26</div>
+          <h2 class="notice-title">키즈건강비서 v1.0 약관·개인정보처리방침 시행</h2>
+          <p class="notice-body">
+            키즈건강비서 v1.0 출시에 맞춰 <a href="/terms">이용약관</a>과 <a href="/privacy">개인정보처리방침</a>을 2026-05-26부로 시행해요.
+            v1.0은 가입·로그인 없이 게스트로 바로 시작하며, 자녀의 건강정보는 모두 기기 내부에 저장되고 외부 서버로 전송되지 않아요.
+            앱 안정성 진단을 위한 익명 충돌 로그(Firebase Crashlytics)와 익명 사용 통계(Firebase Analytics)는 수집되며, 광고 ID는 수집하지 않고 앱 내 광고도 표시하지 않아요.
+          </p>
+        </li>
+
+        <li class="notice-item">
+          <div class="notice-date">2026-05-26</div>
+          <h2 class="notice-title">키즈건강비서 v1.0 양 스토어 심사 제출</h2>
+          <p class="notice-body">
+            키즈건강비서 v1.0이 Google Play와 App Store 양쪽에 심사 제출되었어요.
+            통과되는 대로 출시 소식 별도로 전해드릴게요. 첫 출시 사용 의견은 <a href="mailto:kids@hohostudio.co.kr">kids@hohostudio.co.kr</a>로 보내주시면 다음 업데이트에 큰 힘이 돼요.
+          </p>
+        </li>
+
+      </ul>
+
+      <footer>
+        <p>© 2026 hoho studio · <a href="/">홈</a> · <a href="/support">지원</a></p>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
