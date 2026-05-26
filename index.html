@@ -6,12 +6,53 @@
   <title>hoho studio</title>
   <meta name="description" content="hoho studio — 따뜻한 일상을 만드는 작은 스튜디오" />
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .featured-app {
+      max-width: 540px;
+      margin: 40px auto 0;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+    .featured-app h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+      color: var(--text);
+    }
+    .featured-app p {
+      margin: 0 0 12px;
+      font-size: 14px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+    .featured-app a.cta {
+      display: inline-block;
+      color: var(--hoho-caramel);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .featured-app a.cta:hover { color: var(--text); }
+  </style>
 </head>
 <body>
   <main class="hero">
     <img class="logo hero-logo" src="/assets/logo.svg" alt="hoho studio" />
-    <p class="tagline">따뜻한 일상을 만드는 작은 스튜디오 · 준비 중</p>
+    <p class="tagline">따뜻한 일상을 만드는 작은 스튜디오</p>
+
+    <div class="featured-app">
+      <h3>🩷 키즈건강비서 — 곧 만나요</h3>
+      <p>
+        엄마의 시선으로 아이의 하루를 기록하며 돌보는 앱.<br>
+        체온·수유·예방접종·검진·꽃가루까지 한 곳에서.
+      </p>
+      <a class="cta" href="/kids-health-assistant">자세히 보기 →</a>
+    </div>
+
     <nav class="links">
+      <a href="/support">지원</a>
       <a href="/privacy">개인정보처리방침</a>
       <a href="/terms">이용약관</a>
       <a href="mailto:hello@hohostudio.co.kr">hello@hohostudio.co.kr</a>

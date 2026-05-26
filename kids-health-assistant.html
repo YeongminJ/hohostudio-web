@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>키즈건강비서 · hoho studio</title>
+  <meta name="description" content="엄마의 시선으로 아이의 하루를 기록하며 돌보는 앱. 발열, 수유, 예방접종, 검진, 꽃가루까지 한 곳에서." />
+  <meta property="og:title" content="키즈건강비서" />
+  <meta property="og:description" content="엄마의 시선으로 아이의 하루를 기록하며 돌보는 앱이에요." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hohostudio.co.kr/kids-health-assistant" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .app-hero {
+      text-align: center;
+      padding: 56px 20px 32px;
+    }
+    .app-hero h1 {
+      font-size: 36px;
+      margin: 20px 0 12px;
+      letter-spacing: -1px;
+    }
+    .app-hero .tagline {
+      font-size: 17px;
+      color: var(--text-soft);
+      max-width: 480px;
+      margin: 0 auto 28px;
+    }
+    .app-hero .heart {
+      color: #FD9184;
+    }
+    .app-icon {
+      width: 132px;
+      height: 132px;
+      border-radius: 28px;
+      box-shadow: 0 12px 32px rgba(253,145,132,0.20);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .download-row {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #2A2118;
+      color: #FFF8EC;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .download-btn:hover {
+      opacity: 0.85;
+      color: #FFF8EC;
+    }
+    .download-btn.disabled {
+      background: #C5A992;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+    .download-status {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-soft);
+      margin-top: 12px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin: 40px 0;
+    }
+    .feature-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .feature-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+    .feature-card p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .screenshots {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding: 16px 0 24px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .screenshots img {
+      flex: 0 0 auto;
+      width: 240px;
+      height: auto;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+      scroll-snap-align: start;
+    }
+
+    .promise-list {
+      background: #FFECEC;
+      border: 1px solid #fecaca;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+    .promise-list h3 {
+      margin: 0 0 12px;
+      color: #2A2118;
+    }
+    .promise-list ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .roadmap-list {
+      background: #DCEEE3;
+      border: 1px solid #B8DBC4;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+    .roadmap-list h3 {
+      margin: 0 0 12px;
+      color: #5A8E70;
+    }
+    .roadmap-list ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .disclaimer {
+      background: #FFF3D9;
+      border-left: 3px solid #B07A12;
+      padding: 14px 18px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: var(--text-soft);
+      margin: 32px 0;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" class="logo-link" aria-label="hoho studio 홈">
+        <img class="logo header-logo" src="/assets/logo.svg" alt="hoho studio" />
+      </a>
+      <nav>
+        <a href="/">홈</a>
+        <a href="/kids-health-assistant">키즈건강비서</a>
+        <a href="/support">지원</a>
+        <a href="/privacy">개인정보처리방침</a>
+        <a href="/terms">이용약관</a>
+      </nav>
+    </header>
+
+    <section class="app-hero">
+      <img class="app-icon" src="/assets/kids-health-assistant-icon.png" alt="키즈건강비서 앱 아이콘" onerror="this.style.display='none'" />
+      <h1>키즈건강비서 <span class="heart">🩷</span></h1>
+      <p class="tagline">
+        엄마의 시선으로 아이의 하루를<br>
+        기록하며 돌보는 앱이에요.<br>
+        한 아이의 엄마가 양육하면서 직접 만들었어요.
+      </p>
+      <div class="download-row">
+        <a class="download-btn disabled" href="#" aria-disabled="true">
+          🍎 App Store · 곧 만나요
+        </a>
+        <a class="download-btn disabled" href="#" aria-disabled="true">
+          ▶️ Google Play · 곧 만나요
+        </a>
+      </div>
+      <p class="download-status">현재 양 스토어 심사 중이에요. 통과되면 곧 만날 수 있어요.</p>
+    </section>
+
+    <h2>이런 기록이 가능해요</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🌡 체온·발열 관리 모드</h3>
+        <p>38℃ 이상 기록 시 자동으로 발열 모드 시작. 시간 흐름·해열제·진료 방문이 묶여 진료용 요약으로 정리돼요.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🍼 수유·수면·배변 (영아)</h3>
+        <p>0~24개월 영아의 하루 리듬을 한 곳에서. 권장 횟수도 함께 보여드려요.</p>
+      </div>
+      <div class="feature-card">
+        <h3>✏️ 일상 기록 (유아)</h3>
+        <p>24개월 이상 유아의 외출, 기분, 환경을 가벼운 태그로. "유치원", "놀이공원", "코막힘" 한 번 탭이면 끝.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📏 성장 곡선</h3>
+        <p>키·몸무게·머리둘레를 2017 KCDC 성장 도표 백분위로 시각화.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💉 예방접종·영유아 검진</h3>
+        <p>국가예방접종(NIP) 표준 일정과 영유아 건강검진 7회를 자동으로 챙겨요.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌸 꽃가루·계절 질환</h3>
+        <p>기상청 보건기상지수 기반 꽃가루 예보와 계절별 소아 감염병 정보.</p>
+      </div>
+    </div>
+
+    <div class="promise-list">
+      <h3>약속드린 것</h3>
+      <ul>
+        <li>가입 강제 안 해요. 게스트로 바로 시작할 수 있어요.</li>
+        <li>광고 없이 차분하게 사용할 수 있어요.</li>
+      </ul>
+    </div>
+
+    <div class="roadmap-list">
+      <h3>다음 업데이트 예고</h3>
+      <ul>
+        <li><strong>v1.1</strong> · 계정 가입(선택) — 기기 변경해도 데이터 유지</li>
+        <li><strong>v1.2</strong> · 자동 클라우드 백업, 사진 업로드</li>
+        <li><strong>v1.5</strong> · 양육자 공유 — 엄마·아빠가 같은 자녀 기록 함께</li>
+      </ul>
+    </div>
+
+    <h2>만든 곳 — hoho studio</h2>
+    <p>
+      "호호"는 우리 아이의 태명이자 호랑이띠 엄마와 호랑이띠 아이의 애칭이에요. 이름에 담긴 마음 그대로, 곁에서 함께 자라는 앱을 만들고 있어요.
+    </p>
+    <p>
+      만든 곳: <a href="https://hohostudio.co.kr">hoho studio</a>
+      · 문의: <a href="mailto:kids@hohostudio.co.kr">kids@hohostudio.co.kr</a>
+      · 인스타그램: <a href="https://instagram.com/hohostudio.kr" target="_blank" rel="noopener">@hohostudio.kr</a>
+    </p>
+
+    <div class="disclaimer">
+      <strong>의료 면책</strong> · 이 앱은 아이의 건강 기록을 모으고 패턴을 살펴보는 보조 도구예요. 의학적 진단이나 치료를 대체하지 않으니, 증상이 의심되거나 걱정될 때는 반드시 의료진의 진료를 받아주세요. 응급 상황에서는 <strong>119</strong>에 즉시 연락해주세요.
+    </div>
+
+    <footer>
+      <p>© 2026 hoho studio · <a href="/privacy">개인정보처리방침</a> · <a href="/terms">이용약관</a> · <a href="/support">지원</a></p>
+    </footer>
+  </div>
+</body>
+</html>
