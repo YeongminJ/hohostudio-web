@@ -15,6 +15,8 @@
       </a>
       <nav>
         <a href="/">홈</a>
+        <a href="/kids-health-assistant">키즈건강비서</a>
+        <a href="/support">지원</a>
         <a href="/privacy">개인정보처리방침</a>
         <a href="/terms">이용약관</a>
       </nav>
@@ -23,7 +25,7 @@
     <article>
       <h1>키즈건강비서 개인정보처리방침</h1>
       <p class="meta">
-        시행일: 2026-05-08 · 최종 수정일: 2026-05-08
+        시행일: 2026-05-26 · 최종 수정일: 2026-05-26
       </p>
 
       <p>hoho studio(이하 "회사")는 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의 개인정보 및 자녀의 건강정보(민감정보)를 다음과 같이 처리합니다.</p>
@@ -36,9 +38,9 @@
           <tr><th>항목</th><th>수집 방법</th><th>필수/선택</th></tr>
         </thead>
         <tbody>
-          <tr><td>디바이스 식별자, OS 버전, 앱 버전</td><td>앱 실행 시 자동 수집</td><td>필수</td></tr>
+          <tr><td>익명 앱 인스턴스 식별자, OS 버전, 앱 버전</td><td>앱 실행 시 자동 수집</td><td>필수</td></tr>
           <tr><td>크래시·오류 로그</td><td>앱 오류 발생 시 자동 수집</td><td>필수</td></tr>
-          <tr><td>위치정보(시·구 단위)</td><td>꽃가루·알러지 기능 사용 시</td><td>선택</td></tr>
+          <tr><td>위치정보(광역지자체 수준, 예: 경기도)</td><td>꽃가루·알러지 기능 사용 시</td><td>선택</td></tr>
         </tbody>
       </table>
 
@@ -49,11 +51,12 @@
         </thead>
         <tbody>
           <tr><td>자녀의 이름(별칭 가능), 생년월일, 성별</td><td>보호자 직접 입력</td><td>필수</td></tr>
-          <tr><td>신장·체중·체온·맥박 등 건강 측정값</td><td>보호자 직접 입력</td><td>선택</td></tr>
+          <tr><td>신장·체중·머리둘레·체온 등 건강 측정값</td><td>보호자 직접 입력</td><td>선택</td></tr>
           <tr><td>수유·수면·배변·투약 기록</td><td>보호자 직접 입력</td><td>선택</td></tr>
-          <tr><td>피부·증상 사진</td><td>보호자 직접 업로드</td><td>선택</td></tr>
+          <tr><td>일상 기록(외출·기분·환경 메모)</td><td>보호자 직접 입력</td><td>선택</td></tr>
           <tr><td>병원 방문·진료 기록</td><td>보호자 직접 입력</td><td>선택</td></tr>
           <tr><td>알러지·기저질환 정보</td><td>보호자 직접 입력</td><td>선택</td></tr>
+          <tr><td>피부·증상 사진 <em>(v1.x 예정 — v1.0에서는 수집하지 않음)</em></td><td>보호자 직접 업로드</td><td>선택</td></tr>
         </tbody>
       </table>
 
@@ -73,7 +76,8 @@
       <h2>3. 보관 및 이용 기간</h2>
       <ul>
         <li><strong>앱 내 기록 데이터</strong>: 이용자의 디바이스에 로컬 저장(SQLite). 앱 삭제 시 함께 삭제됩니다.</li>
-        <li><strong>크래시·오류 로그</strong>: 수집일로부터 90일 (Sentry 보관 정책)</li>
+        <li><strong>크래시·오류 로그</strong>: 수집일로부터 90일 (Firebase Crashlytics 보관 정책)</li>
+        <li><strong>익명 사용 통계</strong>: 수집일로부터 14개월 (Firebase Analytics 보관 정책)</li>
         <li><strong>법령상 보관 의무</strong>: 관계 법령에서 보관을 요구하는 경우 해당 기간 동안 보관</li>
       </ul>
 
@@ -86,13 +90,14 @@
           <tr><th>수탁자</th><th>위탁 업무</th><th>국가</th></tr>
         </thead>
         <tbody>
-          <tr><td>Sentry (Functional Software Inc.)</td><td>크래시·오류 로그 수집·분석</td><td>미국</td></tr>
-          <tr><td>Apple Inc.</td><td>앱 배포</td><td>미국</td></tr>
-          <tr><td>Google LLC</td><td>앱 배포</td><td>미국</td></tr>
+          <tr><td>Google LLC (Firebase Crashlytics)</td><td>크래시·오류 로그 수집·분석</td><td>미국</td></tr>
+          <tr><td>Google LLC (Firebase Analytics)</td><td>익명 사용 통계 수집·분석</td><td>미국</td></tr>
+          <tr><td>Apple Inc.</td><td>앱 배포 (App Store)</td><td>미국</td></tr>
+          <tr><td>Google LLC</td><td>앱 배포 (Google Play)</td><td>미국</td></tr>
         </tbody>
       </table>
       <div class="notice">
-        <strong>국외 이전 고지</strong> — 위 수탁자에게는 개인을 특정할 수 없는 익명화된 기술 정보가 전송됩니다. 이전 거부 시 앱의 오류 진단 기능이 제한될 수 있습니다.
+        <strong>국외 이전 고지</strong> — 위 수탁자에게는 개인을 특정할 수 없는 익명화된 기술 정보(익명 앱 인스턴스 식별자·OS·기기 모델·앱 사용 이벤트 등)가 전송됩니다. <strong>자녀의 건강정보는 외부로 전송되지 않습니다.</strong> 이전 거부 시 앱의 오류 진단 기능이 제한될 수 있습니다.
       </div>
 
       <h2>6. 파기 절차 및 방법</h2>
@@ -116,7 +121,7 @@
       <p>권리 행사는 아래 연락처로 요청 가능합니다.</p>
 
       <h2>8. 개인정보 자동 수집 장치</h2>
-      <p>본 앱은 쿠키를 사용하지 않습니다. 단, 앱 운영을 위해 디바이스 식별자(광고 ID 제외)를 수집합니다.</p>
+      <p>본 앱은 쿠키를 사용하지 않습니다. 앱 운영을 위해 <strong>익명 앱 인스턴스 식별자</strong>(Firebase Installation ID)를 수집하며, 이는 광고 ID(IDFA/AAID)가 아닙니다. <strong>광고 ID는 수집하지 않으며, 앱 내에 광고는 표시되지 않습니다.</strong></p>
 
       <h2>9. 14세 미만 아동 관련 안내</h2>
       <p>본 앱은 <strong>보호자(성인)가 자녀를 위해 사용하는 앱</strong>입니다. 자녀가 직접 가입·이용하는 서비스가 아니며, 자녀의 정보는 보호자가 입력합니다. 보호자는 자녀 등록 시 보호자임을 확인하는 절차를 거칩니다.</p>
@@ -126,6 +131,7 @@
         <li><strong>책임자</strong>: hoho studio 대표</li>
         <li><strong>이메일</strong>: <a href="mailto:kids@hohostudio.co.kr">kids@hohostudio.co.kr</a></li>
         <li><strong>웹사이트</strong>: <a href="https://hohostudio.co.kr">https://hohostudio.co.kr</a></li>
+        <li><strong>지원 페이지</strong>: <a href="https://hohostudio.co.kr/support">https://hohostudio.co.kr/support</a></li>
       </ul>
 
       <h2>11. 처리방침의 변경</h2>
