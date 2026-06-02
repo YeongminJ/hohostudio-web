@@ -242,6 +242,20 @@ footer {
 }
 .featured-product .cta-secondary:hover { color: var(--text); }
 
+/* Official Google Play badge — sized per Google brand guidelines */
+.google-play-badge {
+  display: inline-block;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.google-play-badge img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+.google-play-badge:hover { opacity: 0.85; }
+
 /* Featured products stack (kids-health-assistant + WEDO) */
 .featured-stack {
   display: flex;
