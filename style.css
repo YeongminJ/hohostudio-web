@@ -242,10 +242,91 @@ footer {
 }
 .featured-product .cta-secondary:hover { color: var(--text); }
 
-/* Product grid (other products — smaller cards) */
-.products-section {
-  margin-top: 48px;
+/* Featured products stack (kids-health-assistant + WEDO) */
+.featured-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
 }
+
+/* Mini-apps container card */
+.miniapps-card {
+  margin-top: 32px;
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 22px;
+}
+.miniapps-card h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  color: var(--text);
+}
+.miniapps-card .miniapps-meta {
+  margin: 0 0 16px;
+  font-size: 12px;
+  color: var(--text-soft);
+}
+.miniapps-list {
+  display: flex;
+  flex-direction: column;
+}
+.miniapp-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.15s ease;
+}
+.miniapp-item:first-child { border-top: none; }
+.miniapp-item:hover { opacity: 0.7; color: inherit; }
+.miniapp-item-icon {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  overflow: hidden;
+}
+.miniapp-item-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.miniapp-item-body { flex: 1; min-width: 0; }
+.miniapp-item h4 {
+  margin: 0 0 2px;
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 700;
+}
+.miniapp-item p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-soft);
+  line-height: 1.45;
+}
+.miniapp-item.placeholder { cursor: default; }
+.miniapp-item.placeholder:hover { opacity: 1; }
+.miniapp-item.placeholder h4 { color: var(--text-soft); }
+.miniapp-item.placeholder .miniapp-item-icon {
+  background: var(--hoho-cream);
+  opacity: 0.6;
+}
+
+/* Legacy product grid (kept for compatibility, unused after redesign) */
+.products-section { margin-top: 48px; }
 .products-section-title {
   font-size: 15px;
   color: var(--text-soft);
