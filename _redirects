@@ -1,0 +1,9 @@
+# Legacy URLs from kids-health-assistant single-product site era.
+# Preserves URLs already embedded in store listings, emails, in-app legal links.
+
+/privacy            /kids-health-assistant/privacy   301
+/terms              /kids-health-assistant/terms     301
+/support            /kids-health-assistant/support   301
+
+/saylove-privacy    /saylove/privacy   301
+/saylove-terms      /saylove/terms     301
