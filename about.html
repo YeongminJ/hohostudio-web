@@ -4,45 +4,60 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>회사소개 · hoho studio</title>
-  <meta name="description" content="hoho studio — 따뜻한 일상을 만드는 1인 스튜디오. '호호'에 담긴 마음과 우리가 만드는 것들" />
+  <meta name="description" content="hoho studio — 따뜻한 일상을 만드는 1인 스튜디오. 사업자 정보와 연락 채널" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" />
-  <link rel="stylesheet" href="/style.css?v=38" />
+  <link rel="stylesheet" href="/style.css?v=39" />
   <style>
     .about-hero {
       text-align: center;
-      padding: 32px 20px 24px;
+      padding: 40px 20px 16px;
     }
     .about-hero h1 {
       margin: 12px 0 6px;
       border: none;
       padding: 0;
+      font-size: clamp(28px, 4vw, 38px);
+      letter-spacing: -0.02em;
     }
     .about-hero .tagline {
       color: var(--text-soft);
       font-size: 15px;
       margin: 0;
     }
-    .story {
-      background: #FFFFFF;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 26px;
-      margin: 32px 0;
+    .about-intro {
+      max-width: 620px;
+      margin: 32px auto 48px;
+      text-align: center;
       font-size: 15px;
-      line-height: 1.75;
+      line-height: 1.9;
+      color: var(--text-soft);
     }
-    .story p { margin: 0 0 14px; }
-    .story p:last-child { margin-bottom: 0; }
-    .story strong { color: var(--hoho-caramel); }
+    .about-intro a { color: var(--hoho-caramel); }
+
+    .info-card {
+      background: #FFFBF3;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px 28px;
+      margin: 20px 0;
+    }
+    .info-card h2 {
+      margin: 0 0 18px;
+      font-size: 16px;
+      letter-spacing: 0.01em;
+      color: var(--hoho-caramel);
+      border: none;
+      padding: 0;
+    }
     .info-grid {
       display: grid;
       grid-template-columns: max-content 1fr;
-      gap: 10px 18px;
+      gap: 12px 22px;
       font-size: 14px;
-      padding: 8px 0;
+      margin: 0;
     }
     .info-grid dt {
       color: var(--text-soft);
@@ -53,6 +68,20 @@
       color: var(--text);
     }
     .info-grid dd a { color: var(--hoho-caramel); }
+
+    .about-closing {
+      text-align: center;
+      margin: 48px 0 16px;
+      font-size: 14px;
+      color: var(--text-soft);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 540px) {
+      .info-grid { grid-template-columns: 1fr; gap: 4px 0; }
+      .info-grid dt { margin-top: 10px; }
+      .info-grid dt:first-of-type { margin-top: 0; }
+    }
   </style>
 </head>
 <body class="page-wide">
@@ -75,35 +104,32 @@
       <p class="tagline">따뜻한 일상을 만드는 작은 스튜디오</p>
     </section>
 
-    <div class="story">
-      <p>
-        <strong>"호호"</strong>는 우리 아이의 태명이에요.
-        호랑이띠 엄마와 호랑이띠 아이의 애칭이기도 하고요.
-      </p>
-      <p>
-        그 이름에 담긴 마음 그대로,
-        곁에서 같이 자라는 작은 도구들을 만들어요.
-        진짜 양육하면서 필요했던 것, 진짜 일상에서 아쉬웠던 것에서 출발해요.
-      </p>
-      <p>
-        지금은 1인 스튜디오로 운영되고 있고,
-        급하게 크기보다는 한 사람 한 사람께 잘 닿는 제품을 천천히 쌓아가고 있어요.
-      </p>
-    </div>
-
-    <h2>지금 만들고 있어요</h2>
-    <p style="color: var(--text-soft); font-size: 14px;">
-      라인업은 <a href="/#products">홈</a>에서 한눈에 보실 수 있어요. 메인 제품은 <a href="/kids-health-assistant">키즈건강비서</a>
-        <a href="/wedo">WEDO</a>, <span class="toss">토스</span> 미니앱으로 <a href="/saylove">오늘도 사랑해</a>를 만들고 있어요.
+    <p class="about-intro">
+      <span class="brand-name">hoho studio</span>는 일상에서 진짜 필요했던 작은 도구들을 만드는 1인 스튜디오예요.<br>
+      "호호" 이름의 시작과 우리가 만드는 것들은 <a href="/">홈에서 한눈에</a> 만나보실 수 있어요.
     </p>
 
-    <h2>사업자 정보</h2>
-    <dl class="info-grid">
-      <dt>상호</dt>          <dd>호호 스튜디오 (<span class="brand-name">hoho studio</span>)</dd>
-      <dt>사업자등록번호</dt> <dd>817-04-03723</dd>
-      <dt>이메일</dt>        <dd><a href="mailto:hello@hohostudio.co.kr">hello@hohostudio.co.kr</a></dd>
-      <dt>인스타그램</dt>    <dd><a href="https://instagram.com/hohostudio.kr" target="_blank" rel="noopener">@hohostudio.kr</a></dd>
-    </dl>
+    <div class="info-card">
+      <h2>사업자 정보</h2>
+      <dl class="info-grid">
+        <dt>상호</dt>          <dd>호호 스튜디오 (<span class="brand-name">hoho studio</span>)</dd>
+        <dt>사업자등록번호</dt> <dd>817-04-03723</dd>
+      </dl>
+    </div>
+
+    <div class="info-card">
+      <h2>연락처</h2>
+      <dl class="info-grid">
+        <dt>일반 문의</dt>      <dd><a href="mailto:hello@hohostudio.co.kr">hello@hohostudio.co.kr</a></dd>
+        <dt>키즈건강비서</dt>   <dd><a href="mailto:kids@hohostudio.co.kr">kids@hohostudio.co.kr</a></dd>
+        <dt>WEDO · 오늘도 사랑해</dt> <dd><a href="mailto:support@hohostudio.co.kr">support@hohostudio.co.kr</a></dd>
+        <dt>인스타그램</dt>    <dd><a href="https://instagram.com/hohostudio.kr" target="_blank" rel="noopener">@hohostudio.kr</a></dd>
+      </dl>
+    </div>
+
+    <p class="about-closing">
+      작은 도구로 일상의 무게를 조금 덜어드릴게요.
+    </p>
 
     <footer class="footer-warm">
       <p class="footer-tagline">© 2026 <span class="brand-name">hoho studio</span> · Made with small ideas and warm hearts.</p>
