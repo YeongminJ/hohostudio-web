@@ -474,8 +474,20 @@ footer {
 .toss { color: #3182F6; font-weight: 700; }
 
 /* ===== Draft home redesign (v2) — scoped to .home-v2 ===== */
-.home-v2 { word-break: keep-all; line-break: strict; overflow-wrap: break-word; }
+.home-v2 {
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: break-word;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+               system-ui, Roboto, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+               'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+}
 .home-v2 .container { max-width: 900px; }
+.home-v2 .brand-name {
+  font-family: 'Comfortaa', 'Pretendard Variable', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
 
 .home-v2 .hero-v2 {
   display: grid;
