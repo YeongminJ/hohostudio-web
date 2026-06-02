@@ -34,28 +34,23 @@
       max-width: 420px;
       margin: 0 auto 24px;
     }
-    .saylove-cta {
-      display: inline-block;
-      background: #2A2118;
-      color: #FFF8EC;
-      padding: 12px 22px;
-      border-radius: 999px;
+    .toss-access {
+      background: #FFF3D6;
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin: 0 auto;
+      max-width: 380px;
       font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
+      color: var(--text);
+      line-height: 1.7;
+      text-align: left;
     }
-    .saylove-cta:hover { background: var(--hoho-caramel); color: #FFF8EC; }
-    .saylove-cta.disabled {
-      background: #C5A992;
-      cursor: not-allowed;
-      opacity: 0.7;
+    .toss-access strong { color: var(--hoho-caramel); }
+    .toss-access ol {
+      margin: 8px 0 0;
+      padding-left: 20px;
     }
-    .saylove-note {
-      text-align: center;
-      font-size: 13px;
-      color: var(--text-soft);
-      margin-top: 12px;
-    }
+    .toss-access li { margin: 2px 0; }
     .saylove-about {
       background: #FFFFFF;
       border: 1px solid var(--border);
@@ -96,10 +91,14 @@
       <p class="tagline">
         매일의 사랑을 가볍게 표현하는 토스 미니앱이에요.
       </p>
-      <a class="saylove-cta disabled" href="#" aria-disabled="true">
-        토스에서 만나기 · 준비 중
-      </a>
-      <p class="saylove-note">토스 미니앱 URL은 곧 안내드릴게요.</p>
+      <div class="toss-access">
+        <strong>토스 앱에서 찾아주세요</strong>
+        <ol>
+          <li>토스 앱 열기</li>
+          <li>홈 화면에서 <strong>앱인토스</strong> 진입</li>
+          <li>"오늘도 사랑해" 검색</li>
+        </ol>
+      </div>
     </section>
 
     <div class="saylove-about">
