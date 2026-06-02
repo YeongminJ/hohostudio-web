@@ -297,7 +297,7 @@ footer {
   color: var(--hoho-caramel);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 4px;
+  margin-top: 8px;
 }
 .product-card h4 {
   margin: 0 0 4px;
