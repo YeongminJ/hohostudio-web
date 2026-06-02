@@ -608,11 +608,7 @@ footer {
 }
 
 .home-v2 .hero-visual {
-  background: linear-gradient(135deg, #FFF8EC 0%, #FFF3D6 100%);
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: 36px 28px;
-  min-height: 280px;
+  padding: 24px 12px;
   display: grid;
   place-items: center;
 }
@@ -664,60 +660,32 @@ footer {
 }
 
 .home-v2 .story-section {
-  margin: 0 0 48px;
-  background: #FFFFFF;
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: clamp(28px, 5vw, 48px);
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 36px;
-  align-items: center;
-}
-.home-v2 .story-section.story-text-only {
-  display: block;
-  text-align: left;
+  margin: 0 auto 56px;
+  padding: 0 8px;
+  max-width: 640px;
+  text-align: center;
 }
 .home-v2 .story-section h3 {
-  margin: 0 0 14px;
-  font-size: 19px;
-  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  font-size: 18px;
+  letter-spacing: -0.01em;
   color: var(--text);
-}
-.home-v2 .tiger-badge {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: #FFF3D6;
-  display: grid;
-  place-items: center;
-  font-size: 64px;
-  margin: 0 auto;
-  border: 1px solid var(--border);
-}
-.home-v2 .story-section h2 {
-  margin: 0 0 14px;
-  font-size: 22px;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-  border: none;
-  padding: 0;
-  color: var(--text);
+  font-weight: 600;
 }
 .home-v2 .story-section p {
   margin: 0;
   font-size: 15px;
   color: var(--text-soft);
-  line-height: 1.85;
+  line-height: 1.9;
 }
 
-/* Values strip (3 columns) */
+/* Values strip (3 columns) — text only, no boxes */
 .home-v2 .values-section {
   margin: 56px 0 32px;
 }
 .home-v2 .values-head {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 .home-v2 .values-head h2 {
   margin: 0;
@@ -729,14 +697,21 @@ footer {
 .home-v2 .values-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 40px;
+  padding: 8px 0;
 }
 .home-v2 .value-card {
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 24px 22px;
   text-align: center;
+  position: relative;
+}
+.home-v2 .value-card:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: var(--border);
 }
 .home-v2 .value-card strong {
   display: block;
@@ -744,10 +719,18 @@ footer {
   font-size: 16px;
   margin-bottom: 8px;
 }
+.home-v2 .value-card strong::before {
+  content: "·";
+  color: var(--hoho-yellow);
+  font-size: 22px;
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
 .home-v2 .value-card span {
   color: var(--text-soft);
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Warm footer (v2) */
@@ -802,21 +785,23 @@ footer {
 @media (max-width: 900px) {
   .home-v2 .hero-v2 {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 24px;
     padding: 32px 0 16px;
   }
-  .home-v2 .hero-visual {
-    padding: 36px 24px;
-    min-height: 280px;
-  }
-  .home-v2 .icon-collage img { width: 76px; height: 76px; }
-  .home-v2 .story-section {
+  .home-v2 .hero-visual { padding: 12px; }
+  .home-v2 .icon-collage img { width: 80px; height: 80px; }
+  .home-v2 .values-strip {
     grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
+    gap: 32px;
   }
-  .home-v2 .tiger-badge { width: 140px; height: 140px; font-size: 50px; }
-  .home-v2 .values-strip { grid-template-columns: 1fr; }
+  .home-v2 .value-card:not(:last-child)::after {
+    right: auto;
+    left: 30%;
+    bottom: -16px;
+    top: auto;
+    width: 40%;
+    height: 1px;
+  }
 }
 
 /* Mobile — icon + name in one header row, desc + CTAs stacked below */
