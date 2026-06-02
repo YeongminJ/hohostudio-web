@@ -133,6 +133,20 @@ footer {
   margin: 0;
   line-height: 1.5;
 }
+.hero-story .tagline {
+  font-size: 22px;
+  letter-spacing: -0.3px;
+}
+.hero-story-text {
+  margin: 24px auto 0;
+  max-width: 380px;
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+.hero-story-text:first-of-type { margin-top: 32px; }
+.hero-story-text + .hero-story-text { margin-top: 14px; }
+.hero-story-text strong { color: var(--hoho-caramel); }
 .hero .links {
   margin-top: 32px;
   font-size: 14px;
