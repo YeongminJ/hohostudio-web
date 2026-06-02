@@ -296,7 +296,7 @@ footer {
 /* Mini-apps container card */
 .miniapps-card {
   margin-top: 32px;
-  background: #FFFFFF;
+  background: #FFFBF3;
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 20px 22px;
@@ -789,7 +789,10 @@ footer {
     grid-template-columns: 1fr;
     gap: 24px;
     padding: 32px 0 16px;
+    text-align: center;
   }
+  .home-v2 .hero-v2 .lead { margin-left: auto; margin-right: auto; }
+  .home-v2 .hero-v2 .hero-pills { text-align: center; }
   .home-v2 .hero-visual { padding: 12px; }
   .home-v2 .icon-collage img { width: 80px; height: 80px; }
   .home-v2 .values-strip {
