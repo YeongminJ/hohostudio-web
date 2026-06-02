@@ -761,7 +761,7 @@ footer {
   margin: 56px 0 40px;
 }
 .home-v2 .closing-box {
-  background: #2A2118;
+  background: var(--hoho-caramel);
   color: #FFF8EC;
   border-radius: 28px;
   padding: clamp(40px, 6vw, 64px) 28px;
@@ -777,7 +777,7 @@ footer {
   line-height: 1.4;
 }
 .home-v2 .closing-box p {
-  color: rgba(255, 248, 236, 0.72);
+  color: rgba(255, 248, 236, 0.85);
   margin: 18px auto 0;
   max-width: 560px;
   font-size: 14px;
