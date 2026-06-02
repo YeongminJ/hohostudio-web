@@ -4,21 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>hoho studio · 따뜻한 일상을 만드는 작은 스튜디오</title>
-  <meta name="description" content="hoho studio — 키즈건강비서, 오늘도 사랑해 등 일상에 가까운 앱을 만드는 1인 스튜디오" />
+  <meta name="description" content="hoho studio — 키즈건강비서, WEDO, 오늘도 사랑해 등 일상에 가까운 앱을 만드는 작은 스튜디오" />
   <meta property="og:title" content="hoho studio" />
   <meta property="og:description" content="따뜻한 일상을 만드는 작은 스튜디오" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hohostudio.co.kr" />
-  <link rel="stylesheet" href="/style.css?v=13" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" />
+  <link rel="stylesheet" href="/style.css?v=33" />
 </head>
-<body>
+<body class="home-v2">
   <div class="container">
     <header class="site-header">
       <a href="/" class="logo-link" aria-label="hoho studio 홈">
         <img class="logo header-logo" src="/assets/logo.svg" alt="hoho studio" />
       </a>
       <nav>
-        <a href="/">홈</a>
+        <a href="/" aria-current="page">홈</a>
         <a href="/kids-health-assistant">키즈건강비서</a>
         <a href="/wedo">WEDO</a>
         <a href="/notices">공지</a>
@@ -26,17 +30,49 @@
       </nav>
     </header>
 
-    <section class="hero hero-text-only hero-story">
-      <p class="tagline">따뜻한 일상을 만드는<br>작은 스튜디오</p>
-      <p class="hero-story-text">
-        호랑이띠 엄마와 호랑이띠 아이의<br>
-        애칭 <strong>'호호'</strong>에서 시작했어요.
-      </p>
-      <p class="hero-story-text">
-        일상에서 진짜 필요했던 것들을<br>
-        천천히 만들고 있어요.
-      </p>
+    <section class="hero-v2">
+      <div>
+        <h1>내가 필요해서<br>만들기 시작했습니다.</h1>
+        <p class="lead">
+          일상 속 작은 불편과 걱정에서 출발한 서비스들. <span class="brand-name">hoho studio</span>는 부모로서, 개발자로서, 그리고 한 사람으로서 직접 필요했던 것들을 가장 단순하고 따뜻한 방식으로 만들어요.
+        </p>
+        <div class="hero-pills">
+          <span>육아 기록</span>
+          <span>가족 소통</span>
+          <span>마음 표현</span>
+          <span>일상 유틸리티</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="hoho studio 제품들">
+        <div class="icon-collage">
+          <div class="icon-tile"><img src="/assets/kids-health-assistant-icon.png" alt="키즈건강비서" /></div>
+          <div class="icon-tile"><img src="/assets/wedo-icon.png" alt="WEDO" /></div>
+          <div class="icon-tile"><img src="/assets/saylove-icon.png" alt="오늘도 사랑해" /></div>
+        </div>
+      </div>
     </section>
+
+    <div class="section-head">
+      <h2>호호는 아주 작은 이야기에서 시작됐어요.</h2>
+      <p>거창한 비즈니스보다 먼저 있었던 건, 가족의 하루와 직접 겪은 불편이었어요.</p>
+    </div>
+
+    <section class="story-section story-text-only">
+      <div class="story-text">
+        <h3>호랑이띠 엄마와 호랑이띠 아이의 애칭, "호호".</h3>
+        <p>
+          처음에는 내 아이를 위해 만들었어요. 아이가 아플 때, 병원 앞에서 기억이 흐려질 때, 가족끼리 같은 일을 반복해서 확인할 때.
+          내가 직접 겪은 순간들을 하나씩 정리하다 보니, 같은 고민을 가진 분들에게도 도움이 될 수 있겠다는 마음이 생겼어요.
+          그렇게 작은 앱들이 모여 <span class="brand-name">hoho studio</span>가 됐어요.
+        </p>
+      </div>
+    </section>
+
+    <div class="section-head">
+      <h2>일상에서 태어난 작은 서비스들</h2>
+      <p>기능보다 먼저, "왜 만들었는지"가 분명한 앱을 만들어요.</p>
+    </div>
 
     <div class="featured-stack">
 
@@ -46,8 +82,8 @@
           <h3><span class="heart">❤︎</span> 키즈건강비서</h3>
         </header>
         <p>
-          엄마의 시선으로 아이의 하루를 기록하며 돌보는 앱.<br>
-          체온·발열 관리, 수유·수면·배변, 예방접종, 영유아 검진, 꽃가루까지 한 곳에서. Google Play에서 만나보실 수 있어요.
+          "언제부터 열이 났지?"라는 질문에 당황했던 경험에서 출발했어요.<br>
+          체온·발열 관리, 수유·수면·배변, 예방접종, 영유아 검진, 꽃가루까지 — 부모가 가장 필요할 때 빠르게 찾을 수 있도록 한 곳에 모았어요.
         </p>
         <div class="ctas">
           <a class="cta-secondary" href="/kids-health-assistant">자세히 보기 →</a>
@@ -60,8 +96,8 @@
           <h3>WEDO</h3>
         </header>
         <p>
-          잠금화면에 바로 뜨는 공유 체크리스트.<br>
-          가족·친구·연인·모임이 함께 챙기는 할 일들을 잊지 않게 챙겨드려요.
+          "이거 했어?"를 반복하지 않아도 되도록 만든 잠금화면 공유 체크리스트예요.<br>
+          가족·친구·연인·모임이 함께 챙겨야 하는 일을 조용하고 간단하게 나눠요.
         </p>
         <div class="ctas">
           <a class="cta-secondary" href="/wedo">자세히 보기 →</a>
@@ -72,7 +108,7 @@
 
     <section class="miniapps-card" id="miniapps">
       <h3><span class="toss">토스</span> 미니앱</h3>
-      <p class="miniapps-meta"><span class="toss">토스</span> 앱 → <span class="toss">앱인토스</span>에서 이름으로 검색해서 만나보실 수 있어요.</p>
+      <p class="miniapps-meta">토스 앱 → 앱인토스에서 이름으로 검색해서 만나보실 수 있어요.</p>
 
       <div class="miniapps-list">
 
@@ -80,7 +116,7 @@
           <div class="miniapp-item-icon"><img src="/assets/saylove-icon.png" alt="" /></div>
           <div class="miniapp-item-body">
             <h4>오늘도 사랑해</h4>
-            <p>매일의 사랑을 가볍게 표현하는 미니앱.</p>
+            <p>마음은 있는데 표현이 어려운 날을 위해 만들었어요.</p>
           </div>
         </a>
 
@@ -108,8 +144,38 @@
       </div>
     </section>
 
-    <footer>
-      <p>© 2026 hoho studio · <a href="/notices">공지</a> · <a href="/about">회사소개</a> · <a href="mailto:hello@hohostudio.co.kr">hello@hohostudio.co.kr</a></p>
+    <section class="values-section">
+      <div class="values-head">
+        <h2><span class="brand-name">hoho studio</span>가 지키고 싶은 것</h2>
+      </div>
+      <div class="values-strip">
+        <div class="value-card">
+          <strong>실제 경험에서 출발</strong>
+          <span>상상보다 생활 속 필요에서 시작해요.</span>
+        </div>
+        <div class="value-card">
+          <strong>단순하고 따뜻하게</strong>
+          <span>복잡한 기능보다 편안한 사용감을 먼저 봐요.</span>
+        </div>
+        <div class="value-card">
+          <strong>오래 쓰이는 도구</strong>
+          <span>반짝이는 서비스보다 매일 곁에 있는 앱을 지향해요.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="closing-box">
+        <h2>필요한 것은 직접 만들고,<br>좋은 것은 함께 나눠요.</h2>
+        <p>
+          <span class="brand-name">hoho studio</span>는 오늘도 일상 속 작은 불편을 발견하고, 누군가의 하루를 조금 더 편안하게 만드는 방법을 고민하고 있어요.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer-warm">
+      <p class="footer-tagline">© 2026 <span class="brand-name">hoho studio</span> · Made with small ideas and warm hearts.</p>
+      <p class="footer-links"><a href="/notices">공지</a> · <a href="/about">회사소개</a> · <a href="mailto:hello@hohostudio.co.kr">hello@hohostudio.co.kr</a></p>
     </footer>
   </div>
 </body>

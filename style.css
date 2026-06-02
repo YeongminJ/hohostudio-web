@@ -15,11 +15,21 @@ html, body {
   padding: 0;
   background: var(--hoho-cream);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
-               "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+               system-ui, Roboto, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+               'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+
+.brand-name {
+  font-family: 'Comfortaa', 'Pretendard Variable', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 a { color: var(--hoho-caramel); }
@@ -34,9 +44,14 @@ a:hover { color: var(--text); }
 .logo { display: block; }
 
 .site-header {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 24px;
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: none;
+  padding-top: 8px;
+  padding-bottom: 0;
+  margin-bottom: 32px;
 }
 
 .logo-link {
@@ -49,15 +64,54 @@ a:hover { color: var(--text); }
 }
 
 .site-header nav {
-  margin-top: 12px;
+  margin-top: 0;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   font-size: 14px;
 }
 .site-header nav a {
-  margin-right: 16px;
+  margin-right: 0;
+  padding: 4px 0;
   text-decoration: none;
   color: var(--text-soft);
+  position: relative;
+  transition: color 0.18s ease;
+}
+.site-header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--hoho-yellow);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-header nav a:hover { color: var(--text); }
+.site-header nav a:hover::after { transform: scaleX(1); }
+.site-header nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+.site-header nav a[aria-current="page"]::after { transform: scaleX(1); }
+
+@media (max-width: 640px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .site-header nav {
+    justify-content: flex-start;
+    font-size: 13px;
+    gap: 16px;
+  }
+}
 
 h1 { font-size: 28px; margin-top: 0; }
 h2 {
@@ -474,87 +528,8 @@ footer {
 /* Toss brand color for "토스"/"앱인토스" word highlight */
 .toss { color: #3182F6; font-weight: 700; }
 
-/* ===== Draft home redesign (v2) — scoped to .home-v2 ===== */
-.home-v2 {
-  word-break: keep-all;
-  line-break: strict;
-  overflow-wrap: break-word;
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
-               system-ui, Roboto, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
-               'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
-}
+/* ===== Home-specific layout (v2) — scoped to .home-v2 ===== */
 .home-v2 .container { max-width: 900px; }
-.home-v2 .brand-name {
-  font-family: 'Comfortaa', 'Pretendard Variable', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-/* Header: logo left + pill nav right, no border line */
-.home-v2 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 24px;
-  padding-top: 8px;
-}
-.home-v2 .site-header nav {
-  margin-top: 0;
-  display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  font-size: 14px;
-}
-.home-v2 .site-header nav a {
-  margin-right: 0;
-  padding: 4px 0;
-  color: var(--text-soft);
-  position: relative;
-  transition: color 0.18s ease;
-}
-.home-v2 .site-header nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  height: 2px;
-  background: var(--hoho-yellow);
-  border-radius: 2px;
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.home-v2 .site-header nav a:hover {
-  color: var(--text);
-}
-.home-v2 .site-header nav a:hover::after {
-  transform: scaleX(1);
-}
-.home-v2 .site-header nav a[aria-current="page"] {
-  color: var(--text);
-  font-weight: 600;
-}
-.home-v2 .site-header nav a[aria-current="page"]::after {
-  transform: scaleX(1);
-}
-
-@media (max-width: 640px) {
-  .home-v2 .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-  .home-v2 .site-header nav {
-    justify-content: flex-start;
-    font-size: 13px;
-    gap: 16px;
-  }
-}
 
 .home-v2 .hero-v2 {
   display: grid;
