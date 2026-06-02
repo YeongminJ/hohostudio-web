@@ -513,16 +513,9 @@ footer {
   padding: 4px 0;
   color: var(--text-soft);
   position: relative;
-  transition: color 0.15s ease;
+  transition: color 0.18s ease;
 }
-.home-v2 .site-header nav a:hover {
-  color: var(--text);
-}
-.home-v2 .site-header nav a[aria-current="page"] {
-  color: var(--text);
-  font-weight: 600;
-}
-.home-v2 .site-header nav a[aria-current="page"]::after {
+.home-v2 .site-header nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -531,6 +524,22 @@ footer {
   height: 2px;
   background: var(--hoho-yellow);
   border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.home-v2 .site-header nav a:hover {
+  color: var(--text);
+}
+.home-v2 .site-header nav a:hover::after {
+  transform: scaleX(1);
+}
+.home-v2 .site-header nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+.home-v2 .site-header nav a[aria-current="page"]::after {
+  transform: scaleX(1);
 }
 
 @media (max-width: 640px) {
