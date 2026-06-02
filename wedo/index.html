@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WEDO · hoho studio</title>
+  <meta name="description" content="WEDO — 말 안 해도 돌아가는 협업 체크 앱. 가족·팀·모임이 할 일을 공유하고 누가 무엇을 했는지 한눈에 확인할 수 있어요." />
+  <meta property="og:title" content="WEDO" />
+  <meta property="og:description" content="말 안 해도 돌아가는 협업 체크 앱" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hohostudio.co.kr/wedo" />
+  <link rel="stylesheet" href="/style.css?v=11" />
+  <style>
+    .wedo-hero {
+      text-align: center;
+      padding: 48px 20px 32px;
+    }
+    .wedo-hero h1 {
+      font-size: 32px;
+      margin: 16px 0 8px;
+      letter-spacing: -0.5px;
+    }
+    .wedo-hero .tagline {
+      font-size: 16px;
+      color: var(--text-soft);
+      max-width: 460px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
+    .wedo-hero-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      box-shadow: 0 8px 24px rgba(255, 201, 77, 0.25);
+      display: block;
+      margin: 0 auto;
+    }
+    .wedo-cta-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 8px;
+    }
+    .wedo-intro {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 26px;
+      margin: 32px 0;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    .wedo-intro p { margin: 0 0 14px; }
+    .wedo-intro p:last-child { margin-bottom: 0; }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin: 24px 0;
+    }
+    .feature-pill {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .feature-pill strong { color: var(--hoho-caramel); }
+    .audience-list {
+      background: #DCEEE3;
+      border: 1px solid #B8DBC4;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 24px 0;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .audience-list h3 { margin: 0 0 10px; color: #5A8E70; font-size: 15px; }
+    .audience-list ul { margin: 0; padding-left: 18px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" class="logo-link" aria-label="hoho studio 홈">
+        <img class="logo header-logo" src="/assets/logo.svg" alt="hoho studio" />
+      </a>
+      <nav>
+        <a href="/">홈</a>
+        <a href="/kids-health-assistant">키즈건강비서</a>
+        <a href="/notices">공지</a>
+        <a href="/about">회사소개</a>
+      </nav>
+    </header>
+
+    <div class="product-subnav">
+      <span class="product-subnav-label">WEDO</span>
+      <a href="/wedo" aria-current="page">랜딩</a>
+      <a href="https://play.google.com/store/apps/details?id=com.hostd.wedo" target="_blank" rel="noopener">Google Play</a>
+    </div>
+
+    <section class="wedo-hero">
+      <img class="wedo-hero-icon" src="/assets/wedo-icon.png" alt="WEDO 앱 아이콘" width="96" height="96" />
+      <h1>WEDO</h1>
+      <p class="tagline">
+        말 안 해도 돌아가는 협업 체크 앱이에요.<br>
+        가족·팀·모임이 할 일을 함께 챙기고,<br>
+        누가 무엇을 했는지 한눈에 보여드려요.
+      </p>
+      <div class="wedo-cta-row">
+        <a class="google-play-badge" href="https://play.google.com/store/apps/details?id=com.hostd.wedo" target="_blank" rel="noopener" aria-label="Google Play에서 WEDO 다운로드">
+          <img src="/assets/google-play-badge.png" alt="Google Play에서 다운로드" />
+        </a>
+      </div>
+    </section>
+
+    <div class="wedo-intro">
+      <p>
+        <strong>WEDO</strong>는 구성원 간의 할 일을 공유하고, 누가 무엇을 했는지 한눈에 확인할 수 있는 비동기 협업 체크 시스템이에요.
+      </p>
+      <p>
+        기존 체크리스트 앱이 개인 기록 중심이라면, WEDO는 가족, 팀, 모임처럼 여러 사람이 함께 움직이는 상황에서 반복적인 확인과 지시를 줄이고 협업 상태를 자연스럽게 공유하도록 돕습니다.
+      </p>
+    </div>
+
+    <h2>해결하려는 문제</h2>
+    <p>
+      협업 환경에서는 "이거 했어?", "누가 할 거야?", "어디까지 됐어?" 같은 반복적인 확인 대화가 자주 발생해요. 이런 커뮤니케이션 비용은 작아 보이지만, 가족의 집안일 분담, 소규모 팀 업무, 여행·모임 준비처럼 일상적인 협업 상황에서 계속 쌓입니다.
+    </p>
+
+    <h2>해결 방법</h2>
+    <p>
+      WEDO는 그룹 기반 체크리스트를 통해 담당자, 진행 상태, 완료 기록을 한눈에 보여줘요. 구성원은 별도의 대화 없이 각자의 할 일을 확인하고 완료할 수 있고, 앱은 누가 무엇을 했는지 자동으로 기록합니다.
+    </p>
+
+    <h2>핵심 기능</h2>
+    <div class="features-grid">
+      <div class="feature-pill"><strong>그룹 기반 체크리스트</strong><br>가족·팀·모임 단위로 함께 챙기는 할 일</div>
+      <div class="feature-pill"><strong>진행 상태 가시화</strong><br>진행 중·완료·미완료 한눈에 확인</div>
+      <div class="feature-pill"><strong>자동 완료 기록</strong><br>누가 무엇을 했는지 자동으로 남김</div>
+      <div class="feature-pill"><strong>비동기 협업 흐름</strong><br>대화 없이 상태를 공유하는 흐름</div>
+    </div>
+
+    <h2>왜 WEDO인가요</h2>
+    <p>
+      WEDO는 단순한 개인용 체크리스트가 아니에요. 사람 사이의 협업 흐름을 관리하는 도구입니다. 할 일을 기록하는 데서 끝나지 않고, 구성원이 스스로 움직일 수 있도록 책임과 진행 상태를 함께 공유해요.
+    </p>
+
+    <div class="audience-list">
+      <h3>이런 분들께 추천드려요</h3>
+      <ul>
+        <li>부부 또는 가족 간 집안일 분담이 필요한 분</li>
+        <li>소규모 팀에서 업무 체크가 필요한 분</li>
+        <li>여행·모임·행사 준비를 함께하는 분</li>
+      </ul>
+    </div>
+
+    <h2>만든 곳 — hoho studio</h2>
+    <p>
+      WEDO는 호호 스튜디오에서 만들었어요. 일상에서 협업이 필요한 작은 그룹들을 위한 도구로, 곧 새 버전으로 다시 인사드릴 예정이에요.
+    </p>
+    <p>
+      만든 곳: <a href="/">hoho studio</a>
+      · 문의: <a href="mailto:hello@hohostudio.co.kr">hello@hohostudio.co.kr</a>
+    </p>
+
+    <footer>
+      <p>© 2026 hoho studio · <a href="/">홈</a> · <a href="/about">회사소개</a></p>
+    </footer>
+  </div>
+</body>
+</html>
