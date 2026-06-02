@@ -289,13 +289,14 @@ footer {
 .featured-stack {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin: 24px 0;
+  gap: 24px;
+  margin: 24px 0 0;
 }
+.home-v2 .featured-stack .featured-product { margin: 0; }
 
 /* Mini-apps container card */
 .miniapps-card {
-  margin-top: 32px;
+  margin-top: 24px;
   background: #FFFBF3;
   border: 1px solid var(--border);
   border-radius: 16px;
