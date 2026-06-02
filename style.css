@@ -473,6 +473,225 @@ footer {
 /* Toss brand color for "토스"/"앱인토스" word highlight */
 .toss { color: #3182F6; font-weight: 700; }
 
+/* ===== Draft home redesign (v2) — scoped to .home-v2 ===== */
+.home-v2 .hero-v2 {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 56px;
+  padding: 56px 0 32px;
+}
+.home-v2 .hero-v2 .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 13px;
+  margin-bottom: 22px;
+}
+.home-v2 .hero-v2 .eyebrow .dot {
+  width: 7px; height: 7px;
+  background: var(--hoho-yellow);
+  border-radius: 50%;
+}
+.home-v2 .hero-v2 h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+.home-v2 .hero-v2 .lead {
+  margin: 22px 0 0;
+  font-size: 16px;
+  color: var(--text-soft);
+  max-width: 520px;
+  line-height: 1.75;
+}
+.home-v2 .hero-v2 .hero-pills {
+  margin-top: 26px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.home-v2 .hero-v2 .hero-pills span {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.home-v2 .hero-visual {
+  position: relative;
+  background: linear-gradient(135deg, #FFF8EC 0%, #FFF3D6 100%);
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  padding: 48px 36px;
+  min-height: 380px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.home-v2 .hero-visual::before {
+  content: "";
+  position: absolute;
+  top: 24px; right: 28px;
+  width: 60px; height: 60px;
+  background: var(--hoho-yellow);
+  border-radius: 50%;
+  opacity: 0.65;
+}
+.home-v2 .icon-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+.home-v2 .icon-collage img {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(95, 75, 59, 0.14);
+  display: block;
+}
+.home-v2 .icon-collage .icon-tile:nth-child(1) { transform: rotate(-3deg); }
+.home-v2 .icon-collage .icon-tile:nth-child(2) { transform: translateY(12px) rotate(2deg); }
+.home-v2 .icon-collage .icon-tile:nth-child(3) { transform: translateY(-8px) rotate(2deg); }
+.home-v2 .icon-collage .icon-tile:nth-child(4) { transform: rotate(-2deg); }
+
+.home-v2 .story-section {
+  margin: 48px 0;
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: clamp(28px, 5vw, 48px);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.home-v2 .tiger-badge {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #FFF3D6;
+  display: grid;
+  place-items: center;
+  font-size: 64px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+}
+.home-v2 .story-section h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  border: none;
+  padding: 0;
+  color: var(--text);
+}
+.home-v2 .story-section p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+
+/* Values strip (3 columns) */
+.home-v2 .values-section {
+  margin: 56px 0 32px;
+}
+.home-v2 .values-head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.home-v2 .values-head h2 {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  border: none;
+  padding: 0;
+}
+.home-v2 .values-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.home-v2 .value-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px 22px;
+  text-align: center;
+}
+.home-v2 .value-card strong {
+  display: block;
+  color: var(--text);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.home-v2 .value-card span {
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Closing dark box */
+.home-v2 .closing-section {
+  margin: 56px 0 40px;
+}
+.home-v2 .closing-box {
+  background: #2A2118;
+  color: #FFF8EC;
+  border-radius: 28px;
+  padding: clamp(40px, 6vw, 64px) 28px;
+  text-align: center;
+}
+.home-v2 .closing-box h2 {
+  color: #FFF8EC;
+  margin: 0;
+  font-size: clamp(22px, 3vw, 30px);
+  letter-spacing: -0.02em;
+  border: none;
+  padding: 0;
+  line-height: 1.4;
+}
+.home-v2 .closing-box p {
+  color: rgba(255, 248, 236, 0.72);
+  margin: 18px auto 0;
+  max-width: 560px;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (max-width: 760px) {
+  .home-v2 .hero-v2 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 32px 0 16px;
+  }
+  .home-v2 .hero-visual {
+    padding: 36px 24px;
+    min-height: 280px;
+  }
+  .home-v2 .icon-collage img { width: 76px; height: 76px; }
+  .home-v2 .story-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .home-v2 .tiger-badge { width: 140px; height: 140px; font-size: 50px; }
+  .home-v2 .values-strip { grid-template-columns: 1fr; }
+}
+
 /* Mobile — icon + name in one header row, desc + CTAs stacked below */
 @media (max-width: 540px) {
   .container { padding: 32px 18px 80px; }
