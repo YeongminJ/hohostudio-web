@@ -475,6 +475,7 @@ footer {
 
 /* ===== Draft home redesign (v2) — scoped to .home-v2 ===== */
 .home-v2 { word-break: keep-all; line-break: strict; overflow-wrap: break-word; }
+.home-v2 .container { max-width: 1080px; }
 
 .home-v2 .hero-v2 {
   display: grid;
