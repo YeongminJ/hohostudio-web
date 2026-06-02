@@ -528,8 +528,11 @@ footer {
 /* Toss brand color for "토스"/"앱인토스" word highlight */
 .toss { color: #3182F6; font-weight: 700; }
 
+/* Wider container for landing/marketing pages (default 720 stays for text/legal) */
+.home-v2 .container,
+.page-wide .container { max-width: 900px; }
+
 /* ===== Home-specific layout (v2) — scoped to .home-v2 ===== */
-.home-v2 .container { max-width: 900px; }
 
 .home-v2 .hero-v2 {
   display: grid;
@@ -712,25 +715,25 @@ footer {
 }
 
 /* Warm footer (v2) */
-.home-v2 .footer-warm {
+.footer-warm {
   text-align: center;
   margin-top: 56px;
   padding-top: 24px;
 }
-.home-v2 .footer-tagline {
+.footer-tagline {
   margin: 0 0 6px;
   color: var(--text);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
-.home-v2 .footer-links {
+.footer-links {
   margin: 0;
   color: var(--text-soft);
   font-size: 13px;
 }
-.home-v2 .footer-links a { color: var(--text-soft); text-decoration: none; }
-.home-v2 .footer-links a:hover { color: var(--text); }
+.footer-links a { color: var(--text-soft); text-decoration: none; }
+.footer-links a:hover { color: var(--text); }
 
 /* Closing dark box */
 .home-v2 .closing-section {
