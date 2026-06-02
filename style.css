@@ -474,11 +474,13 @@ footer {
 .toss { color: #3182F6; font-weight: 700; }
 
 /* ===== Draft home redesign (v2) — scoped to .home-v2 ===== */
+.home-v2 { word-break: keep-all; line-break: strict; overflow-wrap: break-word; }
+
 .home-v2 .hero-v2 {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1.25fr 0.9fr;
   align-items: center;
-  gap: 56px;
+  gap: 48px;
   padding: 56px 0 32px;
 }
 .home-v2 .hero-v2 .eyebrow {
@@ -501,10 +503,11 @@ footer {
 }
 .home-v2 .hero-v2 h1 {
   margin: 0;
-  font-size: clamp(34px, 5vw, 54px);
-  line-height: 1.18;
+  font-size: clamp(30px, 4.4vw, 50px);
+  line-height: 1.22;
   letter-spacing: -0.04em;
   color: var(--text);
+  word-break: keep-all;
 }
 .home-v2 .hero-v2 .lead {
   margin: 22px 0 0;
@@ -709,7 +712,7 @@ footer {
   line-height: 1.75;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .home-v2 .hero-v2 {
     grid-template-columns: 1fr;
     gap: 28px;
