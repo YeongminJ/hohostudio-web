@@ -456,6 +456,9 @@ footer {
 .icon-bg-cream { background: var(--hoho-cream); }
 .icon-bg-yellow { background: #FFF3D6; }
 
+/* Toss brand color for "토스"/"앱인토스" word highlight */
+.toss { color: #3182F6; font-weight: 700; }
+
 /* Mobile — icon + name in one header row, desc + CTAs stacked below */
 @media (max-width: 540px) {
   .container { padding: 32px 18px 80px; }
