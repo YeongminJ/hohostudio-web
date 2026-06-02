@@ -529,7 +529,6 @@ footer {
 }
 
 .home-v2 .hero-visual {
-  position: relative;
   background: linear-gradient(135deg, #FFF8EC 0%, #FFF3D6 100%);
   border: 1px solid var(--border);
   border-radius: 32px;
@@ -537,35 +536,22 @@ footer {
   min-height: 380px;
   display: grid;
   place-items: center;
-  overflow: hidden;
-}
-.home-v2 .hero-visual::before {
-  content: "";
-  position: absolute;
-  top: 24px; right: 28px;
-  width: 60px; height: 60px;
-  background: var(--hoho-yellow);
-  border-radius: 50%;
-  opacity: 0.65;
 }
 .home-v2 .icon-collage {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
   gap: 18px;
-  position: relative;
-  z-index: 1;
 }
 .home-v2 .icon-collage img {
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: 100px;
   border-radius: 22px;
   box-shadow: 0 12px 28px rgba(95, 75, 59, 0.14);
   display: block;
 }
-.home-v2 .icon-collage .icon-tile:nth-child(1) { transform: rotate(-3deg); }
-.home-v2 .icon-collage .icon-tile:nth-child(2) { transform: translateY(12px) rotate(2deg); }
-.home-v2 .icon-collage .icon-tile:nth-child(3) { transform: translateY(-8px) rotate(2deg); }
-.home-v2 .icon-collage .icon-tile:nth-child(4) { transform: rotate(-2deg); }
+.home-v2 .icon-collage .icon-tile:nth-child(1) { transform: translateY(8px) rotate(-3deg); }
+.home-v2 .icon-collage .icon-tile:nth-child(2) { transform: translateY(-8px) rotate(2deg); }
+.home-v2 .icon-collage .icon-tile:nth-child(3) { transform: translateY(8px) rotate(-2deg); }
 
 .home-v2 .story-section {
   margin: 48px 0;
@@ -577,6 +563,10 @@ footer {
   grid-template-columns: 200px 1fr;
   gap: 36px;
   align-items: center;
+}
+.home-v2 .story-section.story-text-only {
+  display: block;
+  text-align: left;
 }
 .home-v2 .tiger-badge {
   width: 180px;
