@@ -214,8 +214,8 @@ footer {
 
 /* Product sub-nav (context strip below studio nav on product pages) */
 .product-subnav {
-  margin: -24px 0 32px;
-  padding: 10px 14px;
+  margin: -16px 0 32px;
+  padding: 6px 12px;
   background: #FFF3D6;
   border-radius: 8px;
   font-size: 13px;
@@ -223,17 +223,24 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 14px;
+  gap: 4px;
 }
 .product-subnav-label {
   font-weight: 700;
   color: var(--text);
+  padding: 8px 10px 8px 4px;
 }
 .product-subnav a {
   color: var(--text-soft);
   text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
 }
-.product-subnav a:hover { color: var(--text); }
+.product-subnav a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.6);
+}
 .product-subnav a[aria-current="page"] {
   color: var(--hoho-caramel);
   font-weight: 700;
