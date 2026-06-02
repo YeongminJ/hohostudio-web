@@ -257,10 +257,12 @@ footer {
   background: #FFFFFF;
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 18px 18px 16px;
+  padding: 16px;
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .product-card:hover {
@@ -268,16 +270,37 @@ footer {
   box-shadow: 0 6px 16px rgba(166,124,82,0.12);
   color: inherit;
 }
+.product-card-icon {
+  width: 56px !important;
+  height: 56px !important;
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 14px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  line-height: 1;
+  overflow: hidden;
+}
+.product-card-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+.product-card-content { flex: 1; min-width: 0; }
 .product-card-tag {
   font-size: 11px;
   font-weight: 700;
   color: var(--hoho-caramel);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .product-card h4 {
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   font-size: 15px;
   color: var(--text);
 }
@@ -285,7 +308,7 @@ footer {
   margin: 0;
   font-size: 13px;
   color: var(--text-soft);
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 /* Placeholder card variant (for unfilled mini-app slots) */
@@ -298,12 +321,24 @@ footer {
   transform: none;
   box-shadow: none;
 }
+.product-card.placeholder .product-card-icon {
+  background: transparent;
+  border: 1.5px dashed var(--border);
+  color: #B8A893;
+  font-size: 22px;
+}
 .product-card.placeholder .product-card-tag {
   color: #B8A893;
 }
 .product-card.placeholder h4 {
   color: var(--text-soft);
 }
+
+/* Icon background presets (used inline via class on .product-card-icon) */
+.icon-bg-pink { background: #FFE6F0; }
+.icon-bg-mint { background: #DCEEE3; }
+.icon-bg-cream { background: var(--hoho-cream); }
+.icon-bg-yellow { background: #FFF3D6; }
 
 /* Mobile */
 @media (max-width: 540px) {
