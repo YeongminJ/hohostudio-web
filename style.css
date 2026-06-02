@@ -553,8 +553,28 @@ footer {
 .home-v2 .icon-collage .icon-tile:nth-child(2) { transform: translateY(-8px) rotate(2deg); }
 .home-v2 .icon-collage .icon-tile:nth-child(3) { transform: translateY(8px) rotate(-2deg); }
 
+.home-v2 .section-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 56px auto 28px;
+}
+.home-v2 .section-head h2 {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  border: none;
+  padding: 0;
+  color: var(--text);
+}
+.home-v2 .section-head p {
+  margin: 12px 0 0;
+  font-size: 15px;
+  color: var(--text-soft);
+}
+
 .home-v2 .story-section {
-  margin: 48px 0;
+  margin: 0 0 48px;
   background: #FFFFFF;
   border: 1px solid var(--border);
   border-radius: 28px;
@@ -567,6 +587,12 @@ footer {
 .home-v2 .story-section.story-text-only {
   display: block;
   text-align: left;
+}
+.home-v2 .story-section h3 {
+  margin: 0 0 14px;
+  font-size: 19px;
+  letter-spacing: -0.02em;
+  color: var(--text);
 }
 .home-v2 .tiger-badge {
   width: 180px;
@@ -633,6 +659,27 @@ footer {
   font-size: 13px;
   line-height: 1.6;
 }
+
+/* Warm footer (v2) */
+.home-v2 .footer-warm {
+  text-align: center;
+  margin-top: 56px;
+  padding-top: 24px;
+}
+.home-v2 .footer-tagline {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.home-v2 .footer-links {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+}
+.home-v2 .footer-links a { color: var(--text-soft); text-decoration: none; }
+.home-v2 .footer-links a:hover { color: var(--text); }
 
 /* Closing dark box */
 .home-v2 .closing-section {
