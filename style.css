@@ -596,18 +596,15 @@ footer {
   line-height: 1.75;
 }
 .home-v2 .hero-v2 .hero-pills {
-  margin-top: 26px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.7;
 }
-.home-v2 .hero-v2 .hero-pills span {
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 8px 14px;
-  font-size: 13px;
-  color: var(--text);
+.home-v2 .hero-v2 .hero-pills span + span::before {
+  content: "·";
+  margin: 0 10px;
+  color: var(--hoho-milktea);
 }
 
 .home-v2 .hero-visual {
