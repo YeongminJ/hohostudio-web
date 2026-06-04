@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>키즈건강비서 · hoho studio</title>
+  <meta name="description" content="같은 아파트에 사는 엄마가 만든 우리 아이 건강 기록 앱" />
+
+  <script>
+    (function () {
+      var ua = navigator.userAgent || '';
+      var isiOS = /iPad|iPhone|iPod/.test(ua);
+      var isAndroid = /Android/i.test(ua);
+      if (isAndroid && !isiOS) {
+        location.replace(
+          'https://play.google.com/store/apps/details?id=studio.hoho.kidshealth' +
+          '&referrer=utm_source%3Dapt_board%26utm_medium%3Doffline_qr%26utm_campaign%3Dkids_health_launch'
+        );
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" />
+  <link rel="stylesheet" href="/style.css?v=42" />
+  <style>
+    .apt-page {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 48px 24px 56px;
+      text-align: center;
+    }
+    .apt-icon {
+      width: 132px;
+      height: 132px;
+      border-radius: 28px;
+      box-shadow: 0 12px 32px rgba(253,145,132,0.20);
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .apt-page h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .apt-page .heart {
+      color: #FD9184;
+      font-weight: 800;
+    }
+    .apt-eyebrow {
+      display: inline-block;
+      background: #FFF3D6;
+      color: var(--hoho-caramel);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .apt-tagline {
+      font-size: 16px;
+      color: var(--text-soft);
+      line-height: 1.7;
+      margin: 0 auto 28px;
+      max-width: 380px;
+    }
+    .apt-moment {
+      background: #FFFBF3;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin: 0 auto 28px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.7;
+      text-align: left;
+    }
+    .apt-moment p { margin: 0 0 10px; }
+    .apt-moment p:last-child { margin-bottom: 0; }
+    .apt-moment strong { color: var(--hoho-caramel); }
+
+    .apt-downloads {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .apt-downloads .google-play-badge img { height: 56px; }
+    .apt-app-store {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 22px;
+      background: #C5A992;
+      color: #FFF8EC;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      opacity: 0.85;
+      cursor: not-allowed;
+    }
+    .apt-disclaimer {
+      font-size: 12px;
+      color: var(--text-soft);
+      line-height: 1.6;
+      margin-top: 28px;
+    }
+    .apt-disclaimer .brand-name { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="apt-page">
+    <div class="apt-eyebrow">같은 아파트에 사는 엄마가 만들었어요</div>
+
+    <img class="apt-icon" src="/assets/kids-health-assistant-icon.png" alt="키즈건강비서 아이콘" width="132" height="132" />
+
+    <h1>키즈건강비서 <span class="heart">❤︎</span></h1>
+    <p class="apt-tagline">
+      우리 아이의 건강과 성장을<br>
+      한 곳에서 따뜻하게 기록하세요.
+    </p>
+
+    <div class="apt-moment">
+      <p>아이가 열날 때, <strong>"해열제 언제 먹였지?"</strong> 하고 당황한 적 있다면.</p>
+      <p>발열·투약·수면·예방접종·성장 기록까지 — 진료실에서 한 번에 보여드릴 수 있게 정리돼요.</p>
+    </div>
+
+    <div class="apt-downloads">
+      <a class="google-play-badge"
+         href="https://play.google.com/store/apps/details?id=studio.hoho.kidshealth&referrer=utm_source%3Dapt_board%26utm_medium%3Doffline_qr%26utm_campaign%3Dkids_health_launch"
+         target="_blank" rel="noopener"
+         aria-label="Google Play에서 키즈건강비서 다운로드">
+        <img src="/assets/google-play-badge.png" alt="Google Play에서 다운로드" />
+      </a>
+      <span class="apt-app-store">🍎 App Store · 곧 만나요</span>
+    </div>
+
+    <p class="apt-disclaimer">
+      본 앱은 건강 기록과 정보 제공용이며, 의료 진단·치료를 대체하지 않아요.<br>
+      만든 곳 <span class="brand-name">hoho studio</span> · <a href="/kids-health-assistant">자세히 보기</a>
+    </p>
+  </div>
+</body>
+</html>
