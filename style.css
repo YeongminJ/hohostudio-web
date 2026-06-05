@@ -371,7 +371,11 @@ a.featured-product-link:hover .cta-secondary {
 }
 .featured-product .cta-secondary:hover { color: var(--text); }
 
-/* Official Google Play badge — sized per Google brand guidelines */
+/* Store badges — sized so that visual widths match (~145px each).
+   Apple/Google ship badges with different aspect ratios, so to land
+   on the same visible width we use different heights:
+     - App Store badge: 48px tall (ratio ~3:1) → ~144px wide
+     - Google Play badge: 56px tall (ratio ~2.58:1) → ~145px wide  */
 .google-play-badge {
   display: inline-block;
   line-height: 0;
@@ -379,13 +383,12 @@ a.featured-product-link:hover .cta-secondary {
   transition: opacity 0.15s ease;
 }
 .google-play-badge img {
-  height: 48px;
+  height: 56px;
   width: auto;
   display: block;
 }
 .google-play-badge:hover { opacity: 0.85; }
 
-/* Official Apple App Store badge */
 .app-store-badge {
   display: inline-block;
   line-height: 0;
