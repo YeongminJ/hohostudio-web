@@ -385,6 +385,20 @@ a.featured-product-link:hover .cta-secondary {
 }
 .google-play-badge:hover { opacity: 0.85; }
 
+/* Official Apple App Store badge */
+.app-store-badge {
+  display: inline-block;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.app-store-badge img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+.app-store-badge:hover { opacity: 0.85; }
+
 /* Featured products stack (kids-health-assistant + WEDO) */
 .featured-stack {
   display: flex;
