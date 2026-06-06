@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /apt/
+
+Sitemap: https://hohostudio.co.kr/sitemap.xml
