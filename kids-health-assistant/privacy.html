@@ -36,7 +36,11 @@
     <article>
       <h1>키즈건강비서 개인정보처리방침</h1>
       <p class="meta">
-        시행일: 2026-05-26 · 최종 수정일: 2026-06-10
+        시행일: 2026-05-26 · 최종 수정일: 2026-06-14 · 적용 버전: v1.1.0 이상
+      </p>
+      <p class="meta" style="margin-top:-8px;">
+        이전 버전에는 해당 버전 출시 시점의 처리방침이 적용됩니다.
+        변경 이력은 본 페이지 하단을 확인하세요.
       </p>
 
       <p><span class="brand-name">hoho studio</span>(이하 "회사")는 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의 개인정보 및 자녀의 건강정보(민감정보)를 다음과 같이 처리합니다.</p>
@@ -53,6 +57,7 @@
           <tr><td>크래시·오류 로그</td><td>앱 오류 발생 시 자동 수집</td><td>필수</td></tr>
           <tr><td>앱 사용 이벤트(화면 진입·버튼 클릭 등 익명 통계)</td><td>앱 사용 시 자동 수집</td><td>필수</td></tr>
           <tr><td>위치정보(광역지자체 수준, 예: 경기도)</td><td>꽃가루·알러지 기능 사용 시</td><td>선택</td></tr>
+          <tr><td>이메일 주소, 이름(또는 별명)</td><td>소셜 로그인(Apple·Google·카카오·네이버) 시 제공자로부터 제공</td><td>선택<br/>(로그인 시 필수)</td></tr>
         </tbody>
       </table>
 
@@ -82,12 +87,14 @@
         <li>앱 오류 진단 및 서비스 품질 개선</li>
         <li>앱 이용 패턴 분석을 통한 사용성 개선 (익명 통계)</li>
         <li>꽃가루·알러지 등 위치 기반 정보 제공</li>
+        <li>계정 인증 및 다른 기기 간 동일 사용자 식별 (소셜 로그인 사용 시)</li>
       </ul>
       <p>본 앱은 의료 진단·치료 목적이 아니며, 의료 행위를 대체하지 않습니다.</p>
 
       <h2>3. 보관 및 이용 기간</h2>
       <ul>
         <li><strong>앱 내 기록 데이터</strong>: 이용자의 디바이스에 로컬 저장(SQLite). 앱 삭제 시 함께 삭제됩니다.</li>
+        <li><strong>계정 정보(이메일·이름)</strong>: 로그인 시점부터 이용자가 계정 삭제 또는 로그아웃 후 동의 철회 시점까지 (Firebase Authentication)</li>
         <li><strong>크래시·오류 로그</strong>: 수집일로부터 90일 (Firebase Crashlytics 보관 정책)</li>
         <li><strong>익명 사용 통계</strong>: 수집일로부터 14개월 (Firebase Analytics 보관 정책)</li>
         <li><strong>법령상 보관 의무</strong>: 관계 법령에서 보관을 요구하는 경우 해당 기간 동안 보관</li>
@@ -102,14 +109,18 @@
           <tr><th>수탁자</th><th>위탁 업무</th><th>국가</th></tr>
         </thead>
         <tbody>
+          <tr><td>Google LLC (Firebase Authentication)</td><td>계정 인증 및 사용자 식별자 발급</td><td>미국</td></tr>
           <tr><td>Google LLC (Firebase Crashlytics)</td><td>크래시·오류 로그 수집·분석</td><td>미국</td></tr>
           <tr><td>Google LLC (Firebase Analytics)</td><td>익명 사용 통계 수집·분석</td><td>미국</td></tr>
-          <tr><td>Apple Inc.</td><td>앱 배포 (App Store)</td><td>미국</td></tr>
-          <tr><td>Google LLC</td><td>앱 배포 (Google Play)</td><td>미국</td></tr>
+          <tr><td>Cloudflare, Inc.</td><td>소셜 로그인(카카오·네이버) 인증 토큰 발급 서버 운영, 데이터 백업 인프라(예정)</td><td>미국 (서버: 아시아 태평양 region)</td></tr>
+          <tr><td>Apple Inc.</td><td>앱 배포 (App Store), Sign in with Apple</td><td>미국</td></tr>
+          <tr><td>Google LLC</td><td>앱 배포 (Google Play), Google 로그인</td><td>미국</td></tr>
+          <tr><td>Kakao Corp.</td><td>카카오 로그인 본인 인증 (이용자가 카카오 로그인 선택 시)</td><td>대한민국</td></tr>
+          <tr><td>NAVER Cloud Corp.</td><td>네이버 로그인 본인 인증 (이용자가 네이버 로그인 선택 시)</td><td>대한민국</td></tr>
         </tbody>
       </table>
       <div class="notice">
-        <strong>국외 이전 고지</strong> — 위 수탁자에게는 개인을 특정할 수 없는 익명화된 기술 정보(익명 앱 인스턴스 식별자·OS·기기 모델·앱 사용 이벤트 등)가 전송됩니다. <strong>자녀의 건강정보는 외부로 전송되지 않습니다.</strong> 이전 거부 시 앱의 오류 진단 기능이 제한될 수 있습니다.
+        <strong>국외 이전 고지</strong> — 위 미국 수탁자에게는 개인을 특정할 수 없는 익명화된 기술 정보(익명 앱 인스턴스 식별자·OS·기기 모델·앱 사용 이벤트 등) 및 소셜 로그인 시 제공받은 이메일·이름이 전송됩니다. 모든 전송 데이터는 전송 구간 TLS 암호화 및 저장 시 AES-256 암호화가 적용됩니다. <strong>자녀의 건강정보는 현재 외부로 전송되지 않으며, 향후 자동 백업 기능 도입 시(v1.2 예정) 본 처리방침을 사전 갱신하여 동의를 받습니다.</strong> 이전 거부 시 소셜 로그인 및 일부 기능이 제한될 수 있습니다.
       </div>
 
       <h2>6. 파기 절차 및 방법</h2>
@@ -157,6 +168,34 @@
         <li>대검찰청 사이버수사과 (spo.go.kr / 1301)</li>
         <li>경찰청 사이버수사국 (ecrm.cyber.go.kr / 182)</li>
       </ul>
+
+      <h2>13. 변경 이력</h2>
+      <table>
+        <thead>
+          <tr><th>일자</th><th>적용 버전</th><th>주요 변경</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-06-14</td>
+            <td>v1.1.0 이상</td>
+            <td>
+              소셜 로그인(Apple·Google·카카오·네이버) 도입에 따른 이메일·이름 수집 항목 추가.
+              Firebase Authentication, Cloudflare(인증 토큰 발급) 처리 위탁 추가.
+              전송·저장 암호화 명시.
+            </td>
+          </tr>
+          <tr>
+            <td>2026-06-10</td>
+            <td>v1.0.2</td>
+            <td>Firebase Analytics 도입으로 앱 사용 이벤트 수집 항목 명시.</td>
+          </tr>
+          <tr>
+            <td>2026-05-26</td>
+            <td>v1.0.0 (초기)</td>
+            <td>최초 시행. 로컬 저장 + Firebase Crashlytics.</td>
+          </tr>
+        </tbody>
+      </table>
     </article>
 
     <footer class="footer-warm">
