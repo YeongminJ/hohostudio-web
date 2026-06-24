@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>데이터 삭제 요청 · 키즈건강비서 · hoho studio</title>
+  <meta name="description" content="키즈건강비서 사용자 데이터 삭제 요청 안내" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" />
+  <link rel="stylesheet" href="/style.css?v=41" />
+</head>
+<body class="page-wide">
+  <div class="container">
+    <header class="site-header">
+      <a href="/" class="logo-link" aria-label="hoho studio 홈">
+        <img class="logo header-logo" src="/assets/logo.svg" alt="hoho studio" />
+      </a>
+      <nav>
+        <a href="/">홈</a>
+        <a href="/kids-health-assistant" aria-current="page">키즈건강비서</a>
+        <a href="/wedo">WEDO</a>
+        <a href="/notices">공지</a>
+        <a href="/about">회사소개</a>
+      </nav>
+    </header>
+
+    <div class="product-subnav">
+      <span class="product-subnav-label">키즈건강비서</span>
+      <a href="/kids-health-assistant/support">지원</a>
+      <a href="/kids-health-assistant/privacy">개인정보처리방침</a>
+      <a href="/kids-health-assistant/terms">이용약관</a>
+      <a href="/kids-health-assistant/data-deletion" aria-current="page">데이터 삭제 요청</a>
+    </div>
+
+    <article>
+      <h1>키즈건강비서 데이터 삭제 요청</h1>
+      <p class="meta">
+        앱: <strong>키즈건강비서</strong> (Kids Health Assistant) ·
+        개발자: <span class="brand-name">hoho studio</span> ·
+        최종 수정일: 2026-06-24
+      </p>
+
+      <p>
+        키즈건강비서는 이용자가 입력한 자녀 건강 기록과 계정 정보를 언제든지 삭제할 수 있도록 다음 방법을 제공합니다.
+        삭제 요청 시 본 페이지에 명시된 데이터 유형이 영구 삭제되며, 복구할 수 없습니다.
+      </p>
+
+      <h2>1. 앱 내에서 직접 삭제 (즉시 적용)</h2>
+
+      <h3>1.1 로컬 데이터 (모든 기록)</h3>
+      <p>
+        앱을 기기에서 <strong>삭제(uninstall)</strong>하면, 기기에 저장된 모든 자녀 건강 기록(SQLite 데이터베이스)이 함께 영구 삭제됩니다.
+      </p>
+
+      <h3>1.2 클라우드 백업 데이터 (v1.2.0부터)</h3>
+      <p>
+        앱 내 <strong>설정 → 클라우드 백업 → 백업 데이터 삭제</strong>를 실행하면,
+        Cloudflare 백업 서버에 보관된 암호문과 암호화 키가 즉시 함께 삭제됩니다.
+      </p>
+
+      <h3>1.3 계정 정보 (소셜 로그인 정보)</h3>
+      <p>
+        앱 내 <strong>설정 → 계정 → 계정 삭제</strong>를 실행하면,
+        Firebase Authentication에 저장된 계정 정보(이메일·이름·사용자 ID)와 클라우드 백업 데이터가 함께 삭제됩니다.
+      </p>
+
+      <h2>2. 이메일로 삭제 요청</h2>
+      <p>앱에 접근할 수 없거나 기기를 분실하신 경우 다음 이메일로 요청해주세요.</p>
+      <div class="notice">
+        💌 <strong>요청 이메일:</strong>
+        <a href="mailto:kids@hohostudio.co.kr?subject=데이터%20삭제%20요청">kids@hohostudio.co.kr</a>
+      </div>
+      <p>
+        <strong>요청 시 이메일 본문에 다음을 포함해주세요:</strong>
+      </p>
+      <ul>
+        <li>제목: <code>데이터 삭제 요청</code></li>
+        <li>로그인에 사용한 이메일 주소 또는 소셜 로그인 제공자(Apple·Google·Kakao·Naver) 중 하나</li>
+        <li>삭제 범위: ① 전체 계정 삭제, ② 클라우드 백업만 삭제, ③ 특정 자녀 프로필만 삭제 중 선택</li>
+      </ul>
+      <p>
+        본인 확인 절차 후 <strong>요청 접수일로부터 영업일 기준 7일 이내</strong>에 삭제를 완료하고 답변드립니다.
+      </p>
+
+      <h2>3. 삭제되는 데이터 유형</h2>
+      <p>전체 계정 삭제 요청 시 다음 데이터가 모두 영구 삭제됩니다.</p>
+      <table>
+        <thead>
+          <tr><th>데이터 유형</th><th>저장 위치</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>자녀의 이름·생년월일·성별</td>
+            <td>이용자 기기 + 클라우드 백업(동의 시)</td>
+          </tr>
+          <tr>
+            <td>신장·체중·머리둘레·체온 등 건강 측정값</td>
+            <td>이용자 기기 + 클라우드 백업(동의 시)</td>
+          </tr>
+          <tr>
+            <td>수유·수면·배변·투약 기록</td>
+            <td>이용자 기기 + 클라우드 백업(동의 시)</td>
+          </tr>
+          <tr>
+            <td>일상 기록·병원 방문·진료 기록</td>
+            <td>이용자 기기 + 클라우드 백업(동의 시)</td>
+          </tr>
+          <tr>
+            <td>알러지·기저질환 정보</td>
+            <td>이용자 기기 + 클라우드 백업(동의 시)</td>
+          </tr>
+          <tr>
+            <td>계정 정보 (이메일·이름·사용자 ID)</td>
+            <td>Firebase Authentication</td>
+          </tr>
+          <tr>
+            <td>클라우드 백업 암호문 + 암호화 키</td>
+            <td>Cloudflare 백업 서버 (아시아 태평양 region)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>4. 보관되는 데이터 (삭제 후에도 일정 기간 유지)</h2>
+      <p>
+        다음 데이터는 법령 또는 서비스 운영을 위해 <strong>제한된 기간 동안 자동 보관 후 자동 삭제</strong>됩니다.
+        이 데이터는 개인을 직접 식별하지 않습니다.
+      </p>
+      <ul>
+        <li><strong>크래시·오류 로그</strong>: 수집일로부터 90일 후 자동 삭제 (Firebase Crashlytics)</li>
+        <li><strong>익명 사용 통계</strong>: 수집일로부터 14개월 후 자동 삭제 (Firebase Analytics)</li>
+        <li><strong>법령상 보관 의무</strong>: 관계 법령에서 보관을 요구하는 항목에 한해 해당 기간 동안 보관</li>
+      </ul>
+
+      <h2>5. 처리 결과 안내</h2>
+      <ul>
+        <li><strong>앱 내 직접 삭제</strong> — 실행 즉시 적용. 별도 안내 없음.</li>
+        <li><strong>이메일 요청 삭제</strong> — 접수 확인 메일 발송 후, 처리 완료 시 완료 메일 발송.</li>
+        <li>삭제 완료 후에는 동일 계정·기기에서도 데이터 복구가 불가능합니다.</li>
+      </ul>
+
+      <h2>6. 문의</h2>
+      <ul>
+        <li><strong>이메일</strong>: <a href="mailto:kids@hohostudio.co.kr">kids@hohostudio.co.kr</a></li>
+        <li><strong>개인정보 보호책임자</strong>: <span class="brand-name">hoho studio</span> 대표</li>
+        <li><strong>처리방침 전문</strong>: <a href="/kids-health-assistant/privacy">/kids-health-assistant/privacy</a></li>
+      </ul>
+
+      <footer class="footer-warm">
+        <p class="footer-tagline">© 2026 <span class="brand-name">hoho studio</span> · Made with small ideas and warm hearts.</p>
+        <p class="footer-links"><a href="/kids-health-assistant/privacy">개인정보처리방침</a> · <a href="/kids-health-assistant/terms">이용약관</a> · <a href="/kids-health-assistant/support">지원</a> · <a href="/kids-health-assistant/data-deletion">데이터 삭제 요청</a></p>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
